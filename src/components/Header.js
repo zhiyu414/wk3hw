@@ -1,28 +1,32 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View ,Image} from "react-native";
 
 const Header = () => {
   return (
       <View style={styles.headerStyle}>
-        <Text style={styles.textStyle}>Albums</Text>
+        <Image style={styles.imgstyle1} source={require("../imgs/img_list.png") }/>
+        <Image style={styles.imgstyle2} source={require("../imgs/img_search.png") }/>
       </View>
   );
 };
 
 const styles = StyleSheet.create({
   headerStyle: {
-    backgroundColor: "#F8F8F8",
-    justifyContent: "center",
+    flexDirection:'row',
+    justifyContent:'space-between',
+    backgroundColor: "#fff",
     alignItems: "center",
-    height: 60,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    // Android Only
-    elevation: 4
+    height: 56,
   },
-  textStyle: {
-    fontSize: 20
+  imgstyle1:{
+    marginLeft:19,
+    height:12,
+    width:18,
+  },
+  imgstyle2:{
+    marginRight:19.51,
+    height:18,
+    width:18,
   },
 });
 
