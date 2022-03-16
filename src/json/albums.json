@@ -2,38 +2,34 @@
    "albumTitle": "Taylor Swift",
    "albumList": [
       {
-      "title": "Taylor Swift",
-      "artist": "Taylor Swift",
-      "url": "https://www.amazon.com/Taylor-Swift/dp/B0014I4KH6",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/61McsadO1OL.jpg",
-      "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg"
+         "title": "Fashionopolis",
+         "artist": "Dana Thomas",
+         "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book1.png?token=GHSAT0AAAAAABSSGQIV25RMST36ADPPGJF4YRR4WAA"
       },
       {
-         "title": "Fearless",
-         "artist": "Taylor Swift",
-         "url": "https://www.amazon.com/Fearless-Enhanced-Taylor-Swift/dp/B001EYGOEM",
-         "image": "https://images-na.ssl-images-amazon.com/images/I/51qmhXWZBxL.jpg",
-         "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg"
+         "title": "Chanel",
+         "artist": "Patrick Mauriès  ",
+         "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book2.png?token=GHSAT0AAAAAABSSGQIUGYV5OSYJPOXPHJXMYRR4VLQ"
       },
       {
-         "title": "Speak Now",
-         "artist": "Taylor Swift",
-         "url": "https://www.amazon.com/Speak-Now-Taylor-Swift/dp/B003WTE886",
-         "image": "https://images-na.ssl-images-amazon.com/images/I/51vlGuX7%2BFL.jpg",
-         "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg"
+         "title": "Calligraphy",
+         "artist": "June & Lucy",
+         "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book3.png?token=GHSAT0AAAAAABSSGQIUJQJOLF7YCAI7MV2SYRR4XBQ"
       },
       {
-         "title": "Red",
-         "artist": "Taylor Swift",
-         "url": "https://www.amazon.com/Red-Taylor-Swift/dp/B008XNZMOU",
-         "image": "https://images-na.ssl-images-amazon.com/images/I/41j7-7yboXL.jpg",
-         "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg"
+         "title": "Yves Saint Laurent",
+         "artist": "Suzy Menkes ",
+         "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book4.png?token=GHSAT0AAAAAABSSGQIUXGEARZB7EDN4PEWUYRR4XWA"
+         
       },
       {
-         "title": "1989",
-         "artist": "Taylor Swift",
-         "url": "https://www.amazon.com/1989-Taylor-Swift/dp/B00MRHANNI",
-         "image": "https://images-na.ssl-images-amazon.com/images/I/717DWgRftmL._SX522_.jpg",
-         "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg"
+         "title": "The Book of Signs",
+            "artist": "Rudolf Koch  ",
+            "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book5.png?token=GHSAT0AAAAAABSSGQIV234LH235UHONE7XKYRR4YLA"
+      },
+      {
+         "title": "Stitched Up",
+         "artist": "Tansy E. Hoskins",
+         "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book6.png?token=GHSAT0AAAAAABSSGQIVNQRWWLL5VFTTUIOQYRR4YUA"
       }
 ]}

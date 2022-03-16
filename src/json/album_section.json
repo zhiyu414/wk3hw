@@ -6,20 +6,17 @@
       {
       "title": "Fashionopolis",
       "artist": "Dana Thomas",
-      "url": "https://www.amazon.com/Taylor-Swift/dp/B0014I4KH6",
-      "image": "../img_book1.png"
+      "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book1.png?token=GHSAT0AAAAAABSSGQIV25RMST36ADPPGJF4YRR4WAA"
       },
       {
          "title": "Chanel",
          "artist": "Patrick Mauriès  ",
-         "url": "https://www.amazon.com/Fearless-Enhanced-Taylor-Swift/dp/B001EYGOEM",
-         "image": "https://images-na.ssl-images-amazon.com/images/I/51qmhXWZBxL.jpg"
+         "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book2.png?token=GHSAT0AAAAAABSSGQIUGYV5OSYJPOXPHJXMYRR4VLQ"
       },
       {
          "title": "Calligraphy",
          "artist": "June & Lucy",
-         "url": "https://www.amazon.com/Speak-Now-Taylor-Swift/dp/B003WTE886",
-         "image": "https://images-na.ssl-images-amazon.com/images/I/51vlGuX7%2BFL.jpg"
+         "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book3.png?token=GHSAT0AAAAAABSSGQIUJQJOLF7YCAI7MV2SYRR4XBQ"
       }
    ]},
    {
@@ -29,20 +26,17 @@
          {
          "title": "Yves Saint Laurent",
          "artist": "Suzy Menkes ",
-         "url": "https://www.amazon.com/Taylor-Swift/dp/B0014I4KH6",
-         "image": "https://images-na.ssl-images-amazon.com/images/I/61McsadO1OL.jpg"
+         "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book4.png?token=GHSAT0AAAAAABSSGQIUXGEARZB7EDN4PEWUYRR4XWA"
          },
          {
             "title": "The Book of Signs",
             "artist": "Rudolf Koch  ",
-            "url": "https://www.amazon.com/Fearless-Enhanced-Taylor-Swift/dp/B001EYGOEM",
-            "image": "https://images-na.ssl-images-amazon.com/images/I/51qmhXWZBxL.jpg"
+            "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book5.png?token=GHSAT0AAAAAABSSGQIV234LH235UHONE7XKYRR4YLA"
          },
          {
             "title": "Stitched Up",
             "artist": "Tansy E. Hoskins",
-            "url": "https://www.amazon.com/Fearless-Enhanced-Taylor-Swift/dp/B001EYGOEM",
-            "image": "https://images-na.ssl-images-amazon.com/images/I/51qmhXWZBxL.jpg"
+            "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book6.png?token=GHSAT0AAAAAABSSGQIVNQRWWLL5VFTTUIOQYRR4YUA"
          }
    ]}
 ]

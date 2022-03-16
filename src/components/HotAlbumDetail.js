@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Image} from "react-native";
 const HotAlbumDetail = props => {
    let { album } = props;
    return (
-     <View style={{flexDirection: 'column'}}>
+     <View style={styles.containerst}>
       <View style={styles.cardContainerStyle}>
         <View style={styles.cardSectionStyle}>
           <Image
@@ -22,32 +22,35 @@ const HotAlbumDetail = props => {
   )};
 
 const styles = StyleSheet.create({
+  containerst:{
+    flexDirection: 'column',
+  },
   cardContainerStyle: {
-    marginLeft: 5,
-    marginRight: 5,
     marginTop: 10
   },
   headerContainerStyle: {
     flexDirection: "column",
     justifyContent: "space-around",
-    paddingLeft: 12,
-    width: 130,
+    paddingLeft: 20,
+    width: 140,
   },
   headerTitleStyle: {
-    fontSize: 12,
-    fontWeight: 'bold',
+    fontSize: 16,
+    width:140,
+    height:18,
+    marginBottom:8,
+    marginTop:16,
   },
   headerContentStyle: {
-    fontSize: 11,
-    fontWeight: '300',
-    color: "#222",
-    width: '100%'
+    fontSize: 12,
+    color: "#666666",
+    width: 140,
+    height:14,
   },
   cardSectionStyle: {
     padding: 5,
     backgroundColor: "#fff",
-    borderColor: "#ddd",
-    borderBottomWidth: 1
+    paddingLeft:20,
   },
   imageStyle: {
     height: 200,
