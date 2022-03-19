@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import AlbumScreen from '../screens/AlbumScreen';
 import DetailScreen from '../screens/DetailScreen';
@@ -8,28 +10,87 @@ import DetailScreen from '../screens/DetailScreen';
 import albumData from "../json/albums.json";
 
 const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
 const Navigation = () => {
   return (
     <NavigationContainer>
-      <StackNavigator />
+      <MyTabs />
     </NavigationContainer>
   );
 }
 
-const StackNavigator = () => {
+const MyTabs = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen
-        name="Home"
-        component={AlbumScreen}
+    <Tab.Navigator
+      initialRouteName="HomeStack"
+      screenOptions={{
+        tabBarActiveTintColor: '#6200EE',
+        headerShown: false
+      }}
+    >
+      <Tab.Screen 
+        name="HomeStack" 
+        component={HomeStack}
         options={{
-          title: albumData.albumTitle,
+          headerShown: false,
+          title: "Home",
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="home" color={color} size={30} />
+          ),
+        }}
+      />
+      <Tab.Screen 
+        name="Wishlist" 
+        component={HomeStack} 
+        options={{
+          title: "Wishlist",
           headerTitleStyle: {
             fontWeight: '400',
             fontSize: 20
           },
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons  color={color} size={26} />
+          ),
         }}
+      />
+      <Tab.Screen 
+        name="Mybooks" 
+        component={HomeStack} 
+        options={{
+          title: "Mybooks",
+          headerTitleStyle: {
+            fontWeight: '400',
+            fontSize: 20
+          },
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons color={color} size={26} />
+          ),
+        }}
+      />
+    </Tab.Navigator>
+  );
+}
+const HomeStack = () => {
+  return (
+    <Stack.Navigator
+      // screenOptions={{
+      //     headerShown: false
+      //   }}
+    >
+      <Stack.Screen
+        name="Home"
+        component={AlbumScreen}
+        options={{
+          headerShown: false,
+          title: albumData.albumTitle,
+          headerTitleStyle: {
+            height:56,
+            fontWeight: "400",
+            fontSize: 20
+          },
+        }}
+        
       />
       <Stack.Screen
         name="Detail"
@@ -41,6 +102,7 @@ const StackNavigator = () => {
           },
           headerTintColor: '#000',
           headerTitleStyle: {
+            height:56,
             fontWeight: '400',
             fontSize: 20
           },

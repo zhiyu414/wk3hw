@@ -1,12 +1,9 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, Pressable, Linking} from "react-native";
+import { StyleSheet, Text, View, Image, Pressable} from "react-native";
 
 const AlbumDetail = ({ album, navigation }) => {
   return (
       <View style={styles.cardContainerStyle}>
-        <View style={[styles.cardSectionStyle]}>
-          
-        </View>
         <View style={styles.cardSectionStyle}>
           <Pressable 
             onPress={() => navigation.navigate('Detail', album)}
@@ -19,8 +16,8 @@ const AlbumDetail = ({ album, navigation }) => {
             />
           </Pressable>
           <View style={styles.headerContentStyle}>
-            <Text>{album.title}</Text>
-            <Text>{album.artist}</Text>
+            <Text style={styles.titleStyle}>{album.title}</Text>
+            <Text style={styles.bookStyle}>{album.artist}</Text>
           </View>
         </View>   
       </View>
@@ -30,30 +27,38 @@ const styles = StyleSheet.create({
   headerContentStyle: {
     flexDirection: "column",
     justifyContent: "space-around",
-    paddingLeft: 10
+    marginTop:16,
+    
   },
   cardContainerStyle: {
-    borderWidth: 1,
-    borderRadius: 2,
-    borderColor: "#ddd",
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 2,
-    elevation: 1,
-    marginLeft: 5,
-    marginRight: 5,
-    marginTop: 10
+    marginLeft: 20,
+    // marginRight: 5,
+    marginTop: 8,
   },
   cardSectionStyle: {
-    padding: 5,
-    backgroundColor: "#fff",
-    borderColor: "#ddd",
-    borderBottomWidth: 1
+    // paddingRight: 8,
+    // paddingBottom:16,
+    // borderWidth:6,
+    // borderColor:"#000"
+    // backgroundColor: "#fff",
+    // borderColor: "#fff",
+    // borderBottomWidth: 1
   },
   imageStyle: {
     height: 200,
     width: 140
+  },
+  titleStyle:{
+    fontSize:16,
+    fontWeight:"bold",
+    fontFamily:"Roboto"
+  },
+  bookStyle:{
+    fontSize:12,
+    color:"#666666",
+    marginTop:8,
+    fontFamily:"Roboto",
+    fontWeight:"800",
   }
 });
 

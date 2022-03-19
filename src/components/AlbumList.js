@@ -46,12 +46,12 @@ const AlbumList = ({list,navigation}) => {
 };
 const styles = StyleSheet.create({
   sectionHeader: {
-    fontWeight: '600',
-    fontSize: 18,
-    paddingTop: 20,
-    paddingBottom: 5,
-    paddingLeft: 10,
-    textTransform: 'uppercase',
+    fontFamily:'Roboto',
+    fontWeight: 'bold',
+    fontSize: 24,
+    paddingTop: 8,
+    paddingBottom: 8,
+    paddingLeft: 20,
   },
 })
 export default AlbumList;
