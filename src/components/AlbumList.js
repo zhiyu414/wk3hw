@@ -1,10 +1,17 @@
 import React from "react";
-import { Text, FlatList, SectionList, StyleSheet } from "react-native";
+import { FlatList ,SectionList,StyleSheet,Text} from "react-native";
 import AlbumDetail from "./AlbumDetail";
-import HotAlbumDetail from "./HotAlbumDetail";
 import sections from "../json/album_section.json";
 
-const Albumlist = () => {
+const AlbumList = ({list,navigation}) => {
+  // const renderItem = ({ item }) => <AlbumDetail album={item} navigation={navigation} />;
+  // return (
+  //   <FlatList
+  //     data={list}
+  //     renderItem={renderItem}
+  //     keyExtractor={item => item.title}
+  //   />    
+  // );  
   const renderSectionHeader = ({section}) => (
     <>
       <Text style={styles.sectionHeader}>{section.title}</Text>
@@ -12,7 +19,7 @@ const Albumlist = () => {
         <FlatList
           horizontal={true}
           data={section.data}
-          renderItem={({ item }) => <HotAlbumDetail album={item} />}
+          renderItem={({ item }) => <AlbumDetail navigation={navigation} album={item} />}
           showsHorizontalScrollIndicator={false}
           keyExtractor={ item => item.title }
         />
@@ -23,9 +30,8 @@ const Albumlist = () => {
     if (section.horizontal) {
       return null;
     }
-    return <AlbumDetail album={item} />
+    return <AlbumDetail navigation={navigation} album={item} />
   };
-
   return (
     <SectionList 
       sections={sections}
@@ -38,16 +44,14 @@ const Albumlist = () => {
     />
   );
 };
-
 const styles = StyleSheet.create({
   sectionHeader: {
-    fontFamily:'Roboto',
-    fontWeight: 'bold',
-    fontSize: 24,
+    fontWeight: '600',
+    fontSize: 18,
     paddingTop: 20,
     paddingBottom: 5,
-    paddingLeft: 20,
+    paddingLeft: 10,
+    textTransform: 'uppercase',
   },
 })
-
-export default Albumlist;
+export default AlbumList;

@@ -1,5 +1,4 @@
 {
-   "albumTitle": "Taylor Swift",
    "albumList": [
       {
          "title": "Fashionopolis",
@@ -7,6 +6,7 @@
          "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book1.png?token=GHSAT0AAAAAABSSGQIV25RMST36ADPPGJF4YRR4WAA"
       },
       {
+         
          "title": "Chanel",
          "artist": "Patrick Mauriès  ",
          "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book2.png?token=GHSAT0AAAAAABSSGQIUGYV5OSYJPOXPHJXMYRR4VLQ"
@@ -20,12 +20,11 @@
          "title": "Yves Saint Laurent",
          "artist": "Suzy Menkes ",
          "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book4.png?token=GHSAT0AAAAAABSSGQIUXGEARZB7EDN4PEWUYRR4XWA"
-         
       },
       {
          "title": "The Book of Signs",
-            "artist": "Rudolf Koch  ",
-            "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book5.png?token=GHSAT0AAAAAABSSGQIV234LH235UHONE7XKYRR4YLA"
+         "artist": "Rudolf Koch  ",
+         "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book5.png?token=GHSAT0AAAAAABSSGQIV234LH235UHONE7XKYRR4YLA"
       },
       {
          "title": "Stitched Up",
