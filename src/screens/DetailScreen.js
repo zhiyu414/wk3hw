@@ -1,19 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, ScrollView, View, Image, Text, Button ,TouchableOpacity} from 'react-native';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+// import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import Star from "react-native-star-view";
+// import { useState } from 'react/cjs/react.production.min';
 
-const _onPressButton=() =>{
-  return(
-    <MaterialCommunityIcons  name="bookmark" color={"#0062ee"} size={30} />
-  )
-}
+
+
 const DetailScreen = ({ route ,navigation}) => {
   const { 
     title,
     artist,
     image,
-    discription
+    discription,
+    star
   } = route.params;
+  const [wish,updatewish]=useState(false)
   return (
     <ScrollView style={{backgroundColor:"#fff"}}>
       <View >
@@ -28,12 +29,18 @@ const DetailScreen = ({ route ,navigation}) => {
           </TouchableOpacity>
 
           <TouchableOpacity  
-            onPress={_onPressButton}
+            onPress={()=>updatewish(!wish)}
           >
-            <Image
+            {wish?
+              <Image
+              style={{marginRight:22,marginVertical:22}}
+              source={require("../imgs/wishAfter.png")}
+              />:<Image
               style={{marginRight:22,marginVertical:22}}
               source={require("../imgs/wish.png")}
-            />
+              />
+            }
+            
           </TouchableOpacity>
 
 
@@ -49,8 +56,10 @@ const DetailScreen = ({ route ,navigation}) => {
         <View style={styles.textStyle}>
           <Text style={styles.detailtitleStyle}>{title}</Text>
           <Text style={styles.detailartistStyle}>{artist}</Text>
+          
           <View style={{flexDirection:"row"}}>
-            <Text style={styles.fostarstyle}>4.0</Text>
+            <Star score={star} style={styles.starStyle}/>
+            <Text style={styles.fostarstyle}>{star}.0</Text>
             <Text style={styles.fistarstyle}>/5.0</Text>
           </View>
           
@@ -115,6 +124,12 @@ const styles = StyleSheet.create({
   fistarstyle:{
     fontSize:14,
     color:"#666666",
+  },
+  starStyle:{
+    width:86,
+    height:17,
+    color:"yellow",
+    marginRight:18
   }
 });
 

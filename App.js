@@ -9,7 +9,6 @@ const App = () => {
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
         <StatusBar />
-        {/* <Header /> */}
         <Navigation />            
       </SafeAreaView>  
     </SafeAreaProvider>

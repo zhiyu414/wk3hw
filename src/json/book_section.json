@@ -8,21 +8,21 @@
       "artist": "Dana Thomas",
       "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book1.png?token=GHSAT0AAAAAABSSGQIV25RMST36ADPPGJF4YRR4WAA",
       "discription":"no discription",
-      "star":null
+      "star":0
       },
       {
          "title": "Chanel",
          "artist": "Patrick Mauriès  ",
          "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book2.png?token=GHSAT0AAAAAABSSGQIUGYV5OSYJPOXPHJXMYRR4VLQ",
          "discription":"no discription",
-         "star":null
+         "star":0
       },
       {
          "title": "Calligraphy",
          "artist": "June & Lucy",
          "image": "https://raw.githubusercontent.com/zhiyu414/wk3hw/master/src/imgs/img_book3.png?token=GHSAT0AAAAAABSSGQIUJQJOLF7YCAI7MV2SYRR4XBQ",
          "discription":"no discription",
-         "star":null
+         "star":0
       }
    ]},
    {

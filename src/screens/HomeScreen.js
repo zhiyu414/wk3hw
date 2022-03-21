@@ -1,17 +1,19 @@
 import React from "react";
-import { View ,StyleSheet, Image} from "react-native";
-import AlbumList from "../components/AlbumList";
-import albumData from "../json/album_section.json";
+import { View ,StyleSheet, Image, TouchableOpacity ,Alert} from "react-native";
+import BookList from "../components/BookList";
+import bookData from "../json/book_section.json";
 
-const AlbumScreen = ({ navigation }) => {
+const HomeScreen = ({ navigation }) => {
   return (
     <>
     <View style={styles.headerStyle}>
+      <TouchableOpacity onPress={() => Alert.alert("search")}>
         <Image style={styles.imgstyle} source={require("../imgs/img_search.png") }/>
+      </TouchableOpacity>
       </View>
     <View style={{flex: 1,backgroundColor:'#fff'}}>
-      <AlbumList 
-        list={albumData.albumList}
+      <BookList 
+        list={bookData.albumList}
         navigation={navigation}
       />
     </View>
@@ -31,4 +33,4 @@ const styles = StyleSheet.create({
     marginRight:20,
   }
 });
-export default AlbumScreen;
+export default HomeScreen;

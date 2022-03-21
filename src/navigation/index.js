@@ -5,10 +5,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
-import AlbumScreen from '../screens/AlbumScreen';
+import HomeScreen from '../screens/HomeScreen';
 import DetailScreen from '../screens/DetailScreen';
 
-import albumData from "../json/album_section.json";
+import bookData from "../json/book_section.json";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -82,10 +82,10 @@ const HomeStack = () => {
     >
       <Stack.Screen
         name="Home"
-        component={AlbumScreen}
+        component={HomeScreen}
         options={{
           headerShown: false,
-          title: albumData.albumTitle,
+          title: bookData.albumTitle,
           headerTitleStyle: {
             height:56,
             fontWeight: "400",
