@@ -2,7 +2,7 @@ import React from 'react';
 import { SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import { StyleSheet, StatusBar} from "react-native";
 import Navigation from './src/navigation';
-import Header from "./src/components/Header";
+
 
 const App = () => {
   return (

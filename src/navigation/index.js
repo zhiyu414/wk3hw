@@ -4,13 +4,15 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
+
 import AlbumScreen from '../screens/AlbumScreen';
 import DetailScreen from '../screens/DetailScreen';
 
-import albumData from "../json/albums.json";
+import albumData from "../json/album_section.json";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
+
 
 const Navigation = () => {
   return (
@@ -50,7 +52,7 @@ const MyTabs = () => {
             fontSize: 20
           },
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons  color={color} size={26} />
+            <MaterialCommunityIcons  name="bookmark" color={color} size={30} />
           ),
         }}
       />
@@ -64,7 +66,7 @@ const MyTabs = () => {
             fontSize: 20
           },
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons color={color} size={26} />
+            <MaterialCommunityIcons name="book-open" color={color} size={30} />
           ),
         }}
       />
@@ -74,9 +76,9 @@ const MyTabs = () => {
 const HomeStack = () => {
   return (
     <Stack.Navigator
-      // screenOptions={{
-      //     headerShown: false
-      //   }}
+      screenOptions={{
+          headerShown: false
+        }}
     >
       <Stack.Screen
         name="Home"
@@ -95,8 +97,7 @@ const HomeStack = () => {
       <Stack.Screen
         name="Detail"
         component={DetailScreen}
-        options={({ route }) => ({
-          title: route.params.title,
+        options={{
           headerStyle: {
             backgroundColor: '#fff',
           },
@@ -106,7 +107,7 @@ const HomeStack = () => {
             fontWeight: '400',
             fontSize: 20
           },
-        })}
+        }}
       />
     </Stack.Navigator>
   );

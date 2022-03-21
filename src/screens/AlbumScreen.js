@@ -1,7 +1,7 @@
 import React from "react";
 import { View ,StyleSheet, Image} from "react-native";
 import AlbumList from "../components/AlbumList";
-import albumData from "../json/albums.json";
+import albumData from "../json/album_section.json";
 
 const AlbumScreen = ({ navigation }) => {
   return (
